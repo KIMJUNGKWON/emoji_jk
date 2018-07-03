@@ -1,0 +1,128 @@
+.jumbotron{
+  border: 1px #CECEF6 solid;
+  background-color: #FFFFFF;
+  margin: 5px 15px 5px 0px;
+  width: 97%
+}
+
+#contentdiv{
+    border: 1px #CECEF6 solid;
+    width: 70%;
+    height: 550px;
+    margin: 5px;
+}
+
+#chat_area{
+  border: 1px #CECEF6 solid;
+  width: 110%;
+  height: 500px;
+  overflow: auto;
+  margin: 5px
+}
+
+#input_area{
+  border: 1px #CECEF6 solid;
+  width: 250px;
+  height: 35px;
+  overflow: auto;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding-left: 3px;
+  padding-top: 8px
+}
+
+#input_area:focus{
+  outline: none;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding-left: 3px;
+  padding-top: 8px
+}
+
+.emoji_pickup{
+  cursor: pointer;
+  margin-left: 20px
+}
+
+#emoji_pickup_before{
+  margin-top: 5px;
+  margin-right: 10px
+}
+
+#emoji_pickup_after{
+  margin-top: 5px;
+  margin-right: 10px;
+  display: none;
+}
+
+#emoji_popup{
+  display: none;
+  position: absolute;
+  border: 1px #CECEF6 solid;
+  width: 285px;
+  height: 200px;
+  overflow: auto;
+}
+
+#emoji_navigator{
+  border-bottom: 1px #CECEF6 solid;
+}
+
+#emoji_tooltip{
+  display: none;
+  border: 1px #CECEF6 solid;
+}
+
+.navigator{
+  border: 1px #FFFFFF solid;
+  cursor: pointer;
+  margin: 1px;
+  width: 32px;
+  height: 32px
+}
+
+.navigator:hover{
+  border: 1px #CECEF6 solid;
+  cursor: pointer;
+  margin: 1px;
+  width: 32px;
+  height: 32px
+}
+
+.emoji_list{
+  border: 1px #FFFFFF solid;
+  cursor: pointer;
+  margin: 1px;
+  width: 32px;
+  height: 32px
+}
+
+.emoji_list:hover{
+  border: 1px #CECEF6 solid;
+  cursor: pointer;
+  margin: 1px;
+  width: 32px;
+  height: 32px
+}
+
+/* Scroll Bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
