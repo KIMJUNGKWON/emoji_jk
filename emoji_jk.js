@@ -51,13 +51,13 @@ $(document).on("click",".emoji_pickup",function(){
 });
 
 
-// 이모지 목록 외 영역 click시 이모지 목록 popup div가 없어짐
-$(document).bind("mousedown", function(e) {
-
- if (!$(e.target).parents("#emoji_popup").length > 0){
-   $("#emoji_popup").css({"display":"none"});
- }
+// input area에서 esc 누르면 popup div가 사라짐
+$(document).on("keyup","#input_area",function() {
+  if (event.keyCode === 27) {
+    $("#emoji_popup").css({"display":"none"});
+ 	  }
 });
+
 
 
 // emoji_pick
@@ -71,6 +71,7 @@ $(document).on("click",".emoji_list", function(e) {
   var emoji_id = $(this).attr('id');
   var imgtag = '<img style="width:23px; height:23px" src="img/emoji/' + emoji_id + '.png">';
   $('#input_area').append(imgtag);
+  $('#input_area').focus();
 
 });
 
